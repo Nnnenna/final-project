@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+}
+
+.main{
+    display: block;
+   text-align: center;
+   margin: 8rem auto;
+   background-color: #333333;
+   height: 25vw;
+   width: 30vw;
+   border-radius: 2rem;
+}
+
+.star{
+    padding: 1px;
+}
+
+header{
+    text-align: left;
+    height: 3vw;
+    width: 3vw;
+    margin: 2rem;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+}
+
+h1{
+    color: aliceblue;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    text-align: left;
+    font-size: 20px;
+}
+
+p{
+    color: aliceblue;
+    margin: 0 1rem;
+}
+
+.rating-index{
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type=radio]{
+   visibility: hidden;
+}
+
+input[type=radio] + label{
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    margin-top: 1rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input[type=radio] + label:hover{
+    background-color: orangered;
+}
+
+
+
+
+
+input[type=submit]{
+    display: block;
+    width: 20vw;
+    height: 2.5vw;
+    color: aliceblue;
+    background-color: orangered;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    padding: 0.4rem;
+}
+
+input[type=submit]:hover,
+input[type=submit]:focus{
+    background-color: antiquewhite;
+    color: orangered;
+}
+
+.summary{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.summary-content{
+    text-align: center;
+    margin: 4rem auto;
+    background: #333333;
+    border-radius: 2rem;
+    height: 25vw;
+   width: 30vw;
+}
+
+heading{
+    margin: 4rem;
+    padding: 4rem;
+}
+
+.rating{
+    width: 20vw;
+    margin: 2rem 4rem;
+    color: orangered;
+    border-radius: 2rem;
+    background-color: antiquewhite;
+}
+
+h2{
+    color: aliceblue;
+    padding-top: 1rem;
+    margin: 1rem 0rem;
+}
+
+.summary .summary-content h2 p{
+    color: aliceblue;
+}
+
+@media (max-width: 375px){
+    .main{
+        text-align: center;
+        margin: 8rem auto;
+        background-color: #333333;
+        height: 90vw;
+        width: 88vw;
+        border-radius: 2rem;
+    }
+
+    .star{
+        padding: 1px;
+    }
+    
+    header{
+        text-align: left;
+        height: 8vw;
+        width: 8vw;
+        margin: 2rem;
+        padding: 8px;
+        border-radius: 50%;
+        background-color: antiquewhite;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+    span{
+        height: 8vw;
+        width: 8vw;
+        border-radius: 50%;
+        background-color: antiquewhite;
+        margin-top: 1rem;
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    .btn{
+        width: 80vw;
+        height: 10vw;
+        color: aliceblue;
+        background-color: orangered;
+        border-radius: 1rem;
+        padding: 10px;
+    }
+    
+    .summary{
+        text-align: center;
+        margin: 4rem auto;
+        background: #333333;
+        border-radius: 2rem;
+        height: 90vw;
+       width: 88vw;
+    }
+
+    .rating{
+        width: 50vw;
+        height: 8vw;
+        margin: 2rem 4rem;
+        padding: 5px;
+        color: orangered;
+        border-radius: 2rem;
+        background-color: antiquewhite;
+    }
+
+    heading{
+        margin-top: 4rem;
+        padding: 4rem;
+    }
+    
+}
